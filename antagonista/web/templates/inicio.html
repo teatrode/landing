@@ -1,0 +1,470 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Antagonista</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="{% static '/images/favicon.png' %}">
+
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="{% static '/static/css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static '/static/css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static '/static/css/bootstrap.css' %}">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static '/static/css/flexslider.css' %}">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static '/static/css/flexslider.css' %}">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static '/static/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static '/static/css/owl.theme.default.min.css' %}">
+
+	<link rel="stylesheet" href="{% static '/static/css/style.css' %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'js/respond.min.js' %}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<ul class="level-1">
+					<li><a href="{% url 'web:inicio' %}" style="height: 120px">INICIO</a></li>
+					<li><a href="{% url 'web:obras' %}" style="height: 120px">OBRAS</a></li>
+                    <li>
+                        <a href="{% url 'web:escuela' %}" style="height: 120px">ESCUELA</a>
+                    </li>
+					<li><a href="{% url 'web:compania' %}"   style="height: 120px">COMPAÑIA</a></li>
+					<li><a href="{% url 'web:contacto' %}" style="height: 120px">CONTACTO</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a href="{% url 'web:inicio' %}"> <img src="{% static 'images/logo.png' %}" alt="Antagonista" style="height:100px; width:166px;"> </a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url('/static/images/cover_img_1.jpg');     margin-bottom: 30px">
+			   		<div class="overlay"></div>
+			   		<div class="container">
+			   			<div class="row">
+				   			<div class="col-md-8 col-sm-12 col-md-offset-2 col-md-pull-2 slider-text">
+				   				<div class="slider-text-inner">
+				   					<h2 style="width: 945px">Bienvenido a Teatro del Antagonista</h2>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+
+			  	</ul>
+		  	</div>
+		</aside>
+		<div class="container">
+			<div class="home-container">
+				<section id="home_productions">
+					<h3 class="section-title">Próximas Funciones</h3>
+					<ul>
+						<li class="item item-prod">
+							<a href="{% url 'web:yotambien' %}" target="_self">
+								<div class="datetime">
+									<time datetime="2018-09-22">02.11.2018</time>
+								</div>
+								<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+								<p>entro Cultural Matucana 100, Santiago</p>
+							</a>
+						</li>
+
+						<li class="item item-prod">
+							<a href="{% url 'web:yotambien' %}" target="_self">
+								<div class="datetime">
+									<time datetime="2018-09-22">03.11.2018</time>
+								</div>
+								<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+								<p>Centro Cultural Matucana 100, Santiago</p>
+							</a>
+						</li>
+
+						<li class="item item-prod">
+							<a href="{% url 'web:yotambien' %}" target="_self">
+								<div class="datetime">
+									<time datetime="2018-09-22">04.11.2018</time>
+								</div>
+								<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+								<p>Centro Cultural Matucana 100, Santiago</p>
+							</a>
+						</li>
+
+					   <li class="item item-prod">
+							<a href="{% url 'web:yotambien' %}" target="_self">
+								<div class="datetime">
+									<time datetime="2018-09-22">08.11.2018</time>
+								</div>
+								<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+								<p>Centro Cultural Matucana 100, Santiago</p>
+							</a>
+						</li>
+					</ul>
+                    <a href="https://www.rosas.be/en/agenda/" class="cta">Agenda</a>
+				</section>
+                <section id="home_news">
+					<h3 class="section-title">Noticias</h3>
+					<ul>
+						<li class="item item-prod">
+							<a href="https://www.rosas.be/en/news/683-photobook-ianne-teresa-de-keersmaeker-rosas-2007---2017i" target="_self" class="inner">
+	                            <h5 class="title">
+                                    <span>Estreno <i>Yo también quiero ser un hombre blanco heterosexual</i></span>
+                                </h5>
+                                <address>Published on <time datetime="2018-09-11CEST12:23">11.09.2018</time></address>
+                            </a>
+						</li>
+
+						<li class="item item-prod">
+							<a href="{% url 'web:yotambien' %}" target="_self">
+								<div class="datetime">
+									<time datetime="2018-09-22">03.11.2018</time>
+								</div>
+								<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+								<p>Centro Cultural Matucana 100, Santiago</p>
+							</a>
+						</li>
+
+						<li class="item item-prod">
+							<a href="{% url 'web:yotambien' %}" target="_self">
+								<div class="datetime">
+									<time datetime="2018-09-22">04.11.2018</time>
+								</div>
+								<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+								<p>Centro Cultural Matucana 100, Santiago</p>
+							</a>
+						</li>
+
+					   <li class="item item-prod">
+							<a href="{% url 'web:yotambien' %}" target="_self">
+								<div class="datetime">
+									<time datetime="2018-09-22">08.11.2018</time>
+								</div>
+								<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+								<p>Centro Cultural Matucana 100, Santiago</p>
+							</a>
+						</li>
+					</ul>
+                    <a href="https://www.rosas.be/en/agenda/" class="cta">Agenda</a>
+				</section>
+
+			</div>
+		</div>
+        <footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+                        <div class="col-md-4 col-pb-sm">
+							<div class="row">
+								<div class="col-md-10">
+									<h2>Intranet</h2>
+									<p><a class="btn btn-primary btn-learn">Log in</a></p>
+									<!--<div class="row">
+										<div class="col-md-6">
+											<p>From the countries Vokalia and Consonantia</p>
+										</div>
+										<div class="col-md-6">
+											<p>Far far away, behind the word mountains</p>
+										</div>
+									</div>-->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Newsletter</h2>
+							<p>Suscríbete para más información</p>
+							<div class="subscribe text-center">
+								<div class="form-group">
+									<input type="text" class="form-control text-center" placeholder="Enter Email address">
+									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-pb-sm right-display">
+							<h2>Más sobre Antagonista</h2>
+							<p class="colorlib-social-icons colorlib-social-icons2">
+						        <a href="http://www.facebook.com/teatrodelantagonista"><i class="icon-facebook4"></i></a>
+								<a href="#"><i class="icon-twitter3"></i></a>
+								<a href="https://www.instagram.com/teatrodelantagonista/"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+							</p>
+						</div>
+                    </div>
+				    <div class="row">
+                        <div class="col-md-12 col-pb-sm text-center">
+                            <p>
+                                <span class="block" style="font-size:13px">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Teatro del Antagonista </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</footer>
+
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+	<!-- Counters -->
+	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+	<!-- Owl Carousel -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
+
+<style>
+
+
+    .home-container {
+        position: relative;
+    }
+
+	#home_productions {
+		width: 37.33333%;
+		padding-right: 1.33333em;
+	}
+	#home_news {
+		width: 37.33333%;
+		padding-right: 1.33333em;
+	}
+
+    #home_news, #home_productions {
+        padding-top: 1.33333em;
+        margin-bottom: 4em;
+    }
+
+    .home-container section {
+        float: left;
+    }
+
+    .section-title {
+        font-size: 2em;
+        line-height: 1.16667em;
+        margin-bottom: .66667em;
+        text-transform: uppercase;
+        font-family: HelveticaProBlack,Helvetica,Impact,Arial,sans-serif;
+    }
+
+    .item, .item a {
+        position: relative;
+    }
+
+    .item {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        overflow-x: hidden;
+        margin-bottom: 2.66667em;
+    }
+
+    .item a {
+        display: block;
+        opacity: 1;
+        -webkit-transition: opacity .2s linear .1s;
+        transition: opacity .2s linear .1s;
+    }
+
+    .item, .item a {
+        position: relative;
+    }
+
+    a, a:active, a:hover, a:visited {
+        color: inherit;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    a:focus, a:hover, button:focus, input:focus, select:focus, textarea:focus {
+        outline: none;
+        text-decoration: inherit !important;
+
+    }
+
+    .item-prod a:after {
+        content: "";
+        display: block;
+        background: #242d27;
+        height: 2px;
+        width: 10em;
+        margin-top: 1em;
+    }
+
+    *, :after, :before, html, input[type=search] {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .item a:focus, a:hover, .mdzr-no-touchevents .item a:hover {
+        opacity: .5;
+        text-decoration: inherit !important;
+    }
+
+    .item-prod .title {
+        text-transform: uppercase;
+    }
+
+    .title {
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    .big-title, .cta, .dancer-nav span, .filters a, .filters button, .filters u, .hero text, .section-title, .super-title, .text h4, .text h5, .title {
+        font-weight: 700;
+        font-family: HelveticaProBlack,Helvetica,Impact,Arial,sans-serif !important;
+        font-kerning: auto;
+        font-variant-ligatures: discretionary-ligatures,contextual;
+        font-variant-numeric: diagonal-fractions;
+        font-feature-settings: "case","dlig","frac","kern","liga","ordn","ornm";
+    }
+
+    .item-prod .datetime, .item-prod p {
+        display: block;
+        font-weight: 700;
+        font-size: 0.9em;
+        line-height: 1.11111em;
+        padding-bottom: .44444em;
+    }
+
+    p, ul {
+        margin: 0;
+    }
+
+    body {
+        font-family: Courier,monospace !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        line-height: inherit !important;
+    }
+
+	h1, h2, h3, h4, h5, h6 {
+    	color: rgba(0, 0, 0, 0.8);
+    	font-family: "Inconsolata", monospace;
+    	font-weight: 400;
+    	margin: 0 0 0 0;
+	}
+	p{
+
+ 	   font-family: Courier,monospace !important;
+
+	}
+	.title {
+    	font-size: 1em;
+    	line-height: 1em;
+	}
+
+	.section-title {
+		font-size: 2em;
+		line-height: 1.16667em;
+		margin-bottom: .66667em;
+		text-transform: uppercase;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+    	margin: 0;
+    	font-weight: 400;
+    	font-size: 1em;
+	}
+	.container {
+    	padding: 0 2.66667em;
+	}
+
+	.container {
+		position: relative;
+		width: 100%;
+		max-width: 1280px;
+		padding: 0 1.33333em;
+		clear: both;
+		margin-right: 0;
+    	margin-left: 0;
+	}
+
+	.home-container {
+    	position: relative;
+	}
+
+
+	.section-title {
+		font-size: 20px;
+		margin-left: 40px;
+	}
+
+	.cta {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 1.16667em;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #242d27;
+}
+
+
+</style>
+
+<style>
+  @font-face {
+    font-family: 'abc';
+    src: url('{% static 'fonts/bootstrap/Helvetica-Black.otf' %}');
+	src: local('{% static 'fonts/bootstrap/Helvetica-Black.otf' %}');
+  }
+</style>
