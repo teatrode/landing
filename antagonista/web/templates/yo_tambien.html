@@ -1,390 +1,274 @@
-<!DOCTYPE HTML>
-{% load staticfiles %}
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Yo También | Antagonista</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+{% extends 'index-app.html' %}
+{% load static %}
+{% block content %}
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="{% static '/images/favicon.png' %}">
-
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-
-	<!-- Modernizr JS -->
-	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="{% static 'js/respond.min.js' %}"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-
-	<nav id="colorlib-main-nav" role="navigation">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
-		<div class="js-fullheight colorlib-table">
-			<div class="colorlib-table-cell js-fullheight">
-				<ul>
-					<li><a href="{% url 'web:inicio' %}" style="height: 120px">INICIO</a></li>
-					<li><a href="{% url 'web:obras' %}" style="height: 120px">OBRAS</a></li>
-                    <li>
-                        <a href="{% url 'web:escuela' %}" style="height: 120px">ESCUELA</a>
-                    </li>
-					<li><a href="about.html"   style="height: 120px">COMPAÑIA</a></li>
-					<li><a href="{% url 'web:contacto' %}" style="height: 120px">CONTACTO</a></li>
-				</ul>
-			</div>
+<nav id="colorlib-main-nav" role="navigation">
+	<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+	<div class="js-fullheight colorlib-table">
+		<div class="colorlib-table-cell js-fullheight">
+			<ul>
+				<li><a href="{% url 'web:inicio' %}" style="height: 120px">INICIO</a></li>
+				<li><a href="{% url 'web:obras' %}" style="height: 120px">OBRAS</a></li>
+                <li>
+                    <a href="{% url 'web:escuela' %}" style="height: 120px">ESCUELA</a>
+                </li>
+				<li><a href="about.html"   style="height: 120px">COMPAÑIA</a></li>
+				<li><a href="{% url 'web:contacto' %}" style="height: 120px">CONTACTO</a></li>
+			</ul>
 		</div>
-	</nav>
-	<div id="colorlib-page">
-		<header>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="colorlib-navbar-brand">
-							<a href="{% url 'web:inicio' %}"> <img src="{% static 'images/logo2.png' %}" alt="Antagonista" style="height:100px; margin-left: -113px;"> </a>
-						</div>
-						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-					</div>
-				</div>
-			</div>
-		</header>
-		<aside id="colorlib-hero" style="min-height:200px;">
-			<div class="flexslider">
-				<ul class="slides" style="height: 200px;">
-			   	<li style="background-image: url('/static/images/cover_img_6.jpg');">
-			   		<div class="overlay" style="width: 1903px;height: 355px;"></div>
-			   		<div class="container">
-			   			<div class="row">
-				   			<div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center slider-text">
-				   				<div class="slider-text-inner">
-				   					<h2></h2>
-				   					<h1></h1>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			  	</ul>
-		  	</div>
-		</aside>
-       	<section class="containerobra" style="padding: 19px 13px 12px 34px;">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="big-title">
-                        <p style="margin-bottom: 26px;"><span>Yo también quiero ser un hombre blanco Heterosexual / Carla Zuñiga</span> <sup>2018</sup></p>
-                    </h3>
-                </div>
-                <div class="col-md-7">
-                    <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Reseña de la Obra</h5>
-				    <p style="margin-bottom: 24px;font-family: Courier,monospace; text-align: justify;"> “Yo también quiero ser un hombre blanco heterosexual”, es la historia de una mujer haitiana lesbiana
-							que durante toda su vida ha sufrido abusos y vejaciones por ser triplemente marginada: <strong>por ser mujer, por ser negra y por ser lesbiana</strong>. Ella
-							hará todo lo posible por salir de este lugar marginal, y por intentar ocupar otro lugar en el mundo, por encontrar para ella una posición de
-							poder dentro de esta sociedad patriarcal, y de paso, encontrar también la felicidad.
-							Esta obra reflexiona sobre los cánones de poder que rigen nuestra sociedad, y las posibles transgresiones que podemos generar como individuos.
-							¿Es posible re pensar el poder desde un lugar que no sea masculino? ¿Es posible la verdadera revolución desde lo femenino?.
-							Estas preguntas son el hilo conductor de la protagonista, a lo largo de su viaje y su ridículo intento por encontrar su lugar dentro de esta, también ridícula, sociedad actual.
-				</p>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 32px">
-                <div class="col-sm-4">
-                    <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Ficha Artística</h5>
-                    <div class="text credit-2" style="padding-right: 16px; text-align: justify;">
-                        <p><strong>Dirección</strong><br>
-                        Manuel Morgado</p>
-
-                        <p><strong>Dramaturgia </strong><br>
-                        Carla Zuñiga</p>
-
-                        <p><strong>Producción General</strong><br>
-                        Kristopher Gómez</p>
-
-                        <p><strong>Elenco</strong><br>
-                        Juan Pablo Fuentes, Julieth Micolta, Renata Casale, Tamara Ferreira, Andreina Olivari, Ariel Hermosilla, Nicolás Venegas</p>
-
-                        <p><strong>Escenografía</strong><br>
-                        Manuel Morgado</p>
-
-                        <p><strong>Diseño de Vestuario</strong><br>
-                        Zorra Vargas</p>
-
-                        <p><strong>Iluminación</strong><br>
-                        Daniela Valenzuela</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="text credit-2" style="">
-                    <p><strong>Prótesis</strong><br>
-                    Franklin Sepúlveda</p>
-
-                    <p><strong>Diseño Sonoro</strong><br>
-                    Gonzalo Hurtado</p>
-
-                    <p><strong>Setting sonido</strong><br>
-                    Mirko Petrovich</p>
-
-                    <p><strong>Realización Escenográfica</strong><br>
-                    German Martínez y Teatro del Antagonista</p>
-
-                    <p><strong>Peluquería</strong><br>
-                    Franklin Sepúlveda</p>
-
-                    <p><strong>Coordinación General</strong><br>
-                    Catalina López</p>
-
-                    <p><strong>Estreno</strong><br>
-                    3 de Noviembre 2018, Matucana 100 (Santiago)</p>
-
-                    <p><strong>Agradecimientos</strong><br>
-                    Paulina Urrutia - Teatro Camilo Henríquez</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 32px;">
-                <div class="col-md-12">
-                    <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Próximas Fechas - Entradas</h5>
-                    <ul>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">03-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">04-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">08-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">09-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">10-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">11-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">15-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">16-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">17-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">18-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">22-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">23-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">24-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-                        <li class="item-agenda">
-                            <div class="datetime"><time datetime="2018-11-03">25-11-2018</time></div>
-                            <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
-                            <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
-                        </li>
-
-
-                    </ul>
-                </div>
-            </div>
-             <div class="row"  style="margin-bottom: 32px;">
-                <div class="col-md-6">
-                    <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Trailer</h5>
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WqP14LjGRtw" allowfullscreen></iframe>
-                    </div>
-                </div>
-             </div>
-            <div class="row mb-2">
-                <div class="col-md-8 animate-box intro-heading">
-                   <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Galería</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 animate-box text-center">
-                    <a href="" class="work-img" style="background-image: url('/static/images/yotbn1.jpg');">
-                        <div class="overlay"></div>
-                        <div class="desc">
-                            <span class="icon"><i class="icon-heart-outline"></i></span>
-                            <p class="tag"><span>Illustration</span>, <span>Logo</span></p>
-                            <h3>Work 01</h3>
-                            <span class="read-more">Read more <i class="icon-arrow-right3"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 animate-box text-center">
-                    <a href="" class="work-img" style="background-image: url('/static/images/yotbn2.jpg');">
-                        <div class="overlay"></div>
-                        <div class="desc">
-                            <span class="icon"><i class="icon-heart-outline"></i></span>
-                            <p class="tag"><span>Web Design</span>, <span>UI</span></p>
-                            <h3>Work 02</h3>
-                            <span class="read-more">Read more <i class="icon-arrow-right3"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 animate-box text-center">
-                    <a href="" class="work-img" style="background-image: url('/static/images/yotbn3.jpg');">
-                        <div class="overlay"></div>
-                        <div class="desc">
-                            <span class="icon"><i class="icon-heart-outline"></i></span>
-                            <p class="tag"><span>Logo</span>, <span>Illustration</span></p>
-                            <h3>Work 03</h3>
-                            <span class="read-more">Read more <i class="icon-arrow-right3"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 animate-box text-center">
-                    <a href="" class="work-img" style="background-image: url('/static/images/yotbn4.jpg');">
-                        <div class="overlay"></div>
-                        <div class="desc">
-                            <span class="icon"><i class="icon-heart-outline"></i></span>
-                            <p class="tag"><span>Apps</span>, <span>Brand Identity</span></p>
-                            <h3>Work 04</h3>
-                            <span class="read-more">Read more <i class="icon-arrow-right3"></i></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-                        <div class="col-md-4 col-pb-sm">
-							<div class="row">
-								<div class="col-md-10">
-									<h2>Intranet</h2>
-									<p><a class="btn btn-primary btn-learn">Log in</a></p>
-									<!--<div class="row">
-										<div class="col-md-6">
-											<p>From the countries Vokalia and Consonantia</p>
-										</div>
-										<div class="col-md-6">
-											<p>Far far away, behind the word mountains</p>
-										</div>
-									</div>-->
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-pb-sm">
-							<h2>Newsletter</h2>
-							<p>Suscríbete para más información</p>
-							<div class="subscribe text-center">
-								<div class="form-group">
-									<input type="text" class="form-control text-center" placeholder="Enter Email address">
-									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-pb-sm right-display">
-							<h2>Más sobre Antagonista</h2>
-							<p class="colorlib-social-icons colorlib-social-icons2">
-						        <a href="http://www.facebook.com/teatrodelantagonista"><i class="icon-facebook4"></i></a>
-								<a href="#"><i class="icon-twitter3"></i></a>
-								<a href="https://www.instagram.com/teatrodelantagonista/"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
-							</p>
-							<p>
-								<span class="block">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Teatro del Antagonista </span>
-
-							</p>
-						</div>
-                    </div>
-				</div>
-			</div>
-		</footer>
 	</div>
+</nav>
 
-	<!-- jQuery -->
-	<script src="{% static 'js/jquery.min.js' %}"></script>
-	<!-- jQuery Easing -->
-	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
-	<!-- Bootstrap -->
-	<script src="{% static 'js/bootstrap.min.js' %}"></script>
-	<!-- Waypoints -->
-	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-	<!-- Flexslider -->
-	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
-	<!-- Counters -->
-	<script src="{% static 'js/jquery.countTo.js' %}"></script>
-	<!-- Owl Carousel -->
-	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<div id="colorlib-page">
+	<header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="colorlib-navbar-brand">
+                        <a href="{% url 'web:inicio' %}"> <img src="{% static 'images/logo.png' %}" alt="Antagonista" style="height:100px; width:166px;"> </a>
+                    </div>
+                    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-	<!-- Main JS (Do not remove) -->
-	<script src="{% static 'js/main.js' %}"></script>
+    <aside id="colorlib-hero">
+        <div class="flexslider">
+            <ul class="slides">
+            <li style="background-image: url('/static/images/cover_img_6.jpg');">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center slider-text">
+                            <div class="slider-text-inner">
+                                <!-- <h2>Teatro del Antagonista</h2> -->
+                                <!-- <h1>ESTRENOS</h1> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </aside>
 
-	</body>
-</html>
+   	<section class="containerobra" style="padding: 19px 13px 12px 34px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="big-title">
+                    <p style="margin-bottom: 26px;"><span>Yo también quiero ser un hombre blanco Heterosexual / Carla Zuñiga</span> <sup>2018</sup></p>
+                </h3>
+            </div>
+            <div class="col-md-7">
+                <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Reseña de la Obra</h5>
+			    <p style="margin-bottom: 24px;font-family: Courier,monospace; text-align: justify;"> “Yo también quiero ser un hombre blanco heterosexual”, es la historia de una mujer haitiana lesbiana
+						que durante toda su vida ha sufrido abusos y vejaciones por ser triplemente marginada: <strong>por ser mujer, por ser negra y por ser lesbiana</strong>. Ella
+						hará todo lo posible por salir de este lugar marginal, y por intentar ocupar otro lugar en el mundo, por encontrar para ella una posición de
+						poder dentro de esta sociedad patriarcal, y de paso, encontrar también la felicidad.
+						Esta obra reflexiona sobre los cánones de poder que rigen nuestra sociedad, y las posibles transgresiones que podemos generar como individuos.
+						¿Es posible re pensar el poder desde un lugar que no sea masculino? ¿Es posible la verdadera revolución desde lo femenino?.
+						Estas preguntas son el hilo conductor de la protagonista, a lo largo de su viaje y su ridículo intento por encontrar su lugar dentro de esta, también ridícula, sociedad actual.
+			</p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 32px">
+            <div class="col-sm-4">
+                <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Ficha Artística</h5>
+                <div class="text credit-2" style="padding-right: 16px; text-align: justify;">
+                    <p><strong>Dirección</strong><br>
+                    Manuel Morgado</p>
+
+                    <p><strong>Dramaturgia </strong><br>
+                    Carla Zuñiga</p>
+
+                    <p><strong>Producción General</strong><br>
+                    Kristopher Gómez</p>
+
+                    <p><strong>Elenco</strong><br>
+                    Juan Pablo Fuentes, Julieth Micolta, Renata Casale, Tamara Ferreira, Andreina Olivari, Ariel Hermosilla, Nicolás Venegas</p>
+
+                    <p><strong>Escenografía</strong><br>
+                    Manuel Morgado</p>
+
+                    <p><strong>Diseño de Vestuario</strong><br>
+                    Zorra Vargas</p>
+
+                    <p><strong>Iluminación</strong><br>
+                    Daniela Valenzuela</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="text credit-2" style="">
+                <p><strong>Prótesis</strong><br>
+                Franklin Sepúlveda</p>
+
+                <p><strong>Diseño Sonoro</strong><br>
+                Gonzalo Hurtado</p>
+
+                <p><strong>Setting sonido</strong><br>
+                Mirko Petrovich</p>
+
+                <p><strong>Realización Escenográfica</strong><br>
+                German Martínez y Teatro del Antagonista</p>
+
+                <p><strong>Peluquería</strong><br>
+                Franklin Sepúlveda</p>
+
+                <p><strong>Coordinación General</strong><br>
+                Catalina López</p>
+
+                <p><strong>Estreno</strong><br>
+                3 de Noviembre 2018, Matucana 100 (Santiago)</p>
+
+                <p><strong>Agradecimientos</strong><br>
+                Paulina Urrutia - Teatro Camilo Henríquez</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 32px;">
+            <div class="col-md-12">
+                <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Próximas Fechas - Entradas</h5>
+                <ul>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">03-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">04-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">08-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">09-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">10-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">11-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">15-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">16-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">17-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">18-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">22-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">23-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">24-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+                    <li class="item-agenda">
+                        <div class="datetime"><time datetime="2018-11-03">25-11-2018</time></div>
+                        <h3 class="title">Yo también quiero ser un hombre blanco heterosexual</h3>
+                        <p><a href="http://www.m100.cl/programacion/yo-tambien-quiero-ser-un-hombre-blanco-heterosexual/" target="_blank"><span>Centro Cultural Matucana 100</span></a> - Santiago</p>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+         <div class="row"  style="margin-bottom: 32px;">
+            <div class="col-md-6">
+                <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Trailer</h5>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WqP14LjGRtw" allowfullscreen></iframe>
+                </div>
+            </div>
+         </div>
+        <div class="row mb-2">
+            <div class="col-md-8 animate-box intro-heading">
+               <h5 class="section-title" style="text-transform: uppercase;font-size: 1em;line-height: 1.16667em; margin-bottom: .66667em;">Galería</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 animate-box text-center">
+                <a href="" class="work-img" style="background-image: url('/static/images/yotbn1.jpg');">
+                    <div class="overlay"></div>
+                    <div class="desc">
+                        <span class="icon"><i class="icon-heart-outline"></i></span>
+                        <p class="tag"><span>Illustration</span>, <span>Logo</span></p>
+                        <h3>Work 01</h3>
+                        <span class="read-more">Read more <i class="icon-arrow-right3"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 animate-box text-center">
+                <a href="" class="work-img" style="background-image: url('/static/images/yotbn2.jpg');">
+                    <div class="overlay"></div>
+                    <div class="desc">
+                        <span class="icon"><i class="icon-heart-outline"></i></span>
+                        <p class="tag"><span>Web Design</span>, <span>UI</span></p>
+                        <h3>Work 02</h3>
+                        <span class="read-more">Read more <i class="icon-arrow-right3"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 animate-box text-center">
+                <a href="" class="work-img" style="background-image: url('/static/images/yotbn3.jpg');">
+                    <div class="overlay"></div>
+                    <div class="desc">
+                        <span class="icon"><i class="icon-heart-outline"></i></span>
+                        <p class="tag"><span>Logo</span>, <span>Illustration</span></p>
+                        <h3>Work 03</h3>
+                        <span class="read-more">Read more <i class="icon-arrow-right3"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 animate-box text-center">
+                <a href="" class="work-img" style="background-image: url('/static/images/yotbn4.jpg');">
+                    <div class="overlay"></div>
+                    <div class="desc">
+                        <span class="icon"><i class="icon-heart-outline"></i></span>
+                        <p class="tag"><span>Apps</span>, <span>Brand Identity</span></p>
+                        <h3>Work 04</h3>
+                        <span class="read-more">Read more <i class="icon-arrow-right3"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</div>
 
 <style>
     .item-agenda a span {
@@ -430,9 +314,6 @@
         padding-bottom: 23px;
     }
 
-    li.flex-active-slide {
-       opacity: 0 !important;
-    }
 
     @media (min-width: 48em)
     .containerobra {
@@ -494,6 +375,27 @@
     a {
         text-decoration: none;
     }
-    a:hover, a.span:hover   {color: gray;    text-decoration: none;}
-    </style>
+    a:hover, a.span:hover   {color: gray;    text-decoration: none;
+    }
+
+    .container {
+        padding: 0 2.66667em;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1280px;
+        padding: 0 1.33333em;
+        clear: both;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+</style>
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}
 
