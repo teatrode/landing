@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 def index_video(request):
-    context = {'message': 'hola'}
+    context = {}
     return render(request, 'index.html', context)
 
 

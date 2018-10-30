@@ -1,6 +1,7 @@
 from django.conf.urls import url
 
 from . import views
+#app
 
 app_name = 'web'
 
