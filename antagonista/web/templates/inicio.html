@@ -33,10 +33,31 @@
 			</div>
 		</div>
 	</header>
+
 	<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url('/static/images/cover_img_1.jpg');">
+			   		<div class="overlay"></div>
+			   		<div class="container">
+			   			<div class="row">
+				   			<div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center slider-text">
+				   				<div class="slider-text-inner">
+				   					<h2>Teatro del Antagonista</h2>
+				   					<h1>ESTRENOS</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+
+	<!-- <aside id="colorlib-hero">
 		<div class="flexslider">
 			<ul class="slides">
-		   	<li style="background-image: url('/static/images/cover_img_1.jpg');     margin-bottom: 30px">
+		   	<li style="background-image: url('/static/images/cover_img_1.jpg');">
 		   		<div class="overlay"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -51,152 +72,109 @@
 
 		  	</ul>
 	  	</div>
-	</aside>
-	<div class="container">
-		<div class="home-container">
-			<section id="home_productions">
-				<h3 class="section-title">Próximas Funciones</h3>
-				<ul>
-					<li class="item item-prod">
-						<a href="{% url 'web:yotambien' %}" target="_self">
-							<div class="datetime">
-								<time datetime="2018-09-22">02.11.2018</time>
-							</div>
-							<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
-							<p>entro Cultural Matucana 100, Santiago</p>
-						</a>
-					</li>
+	</aside> -->
 
-					<li class="item item-prod">
-						<a href="{% url 'web:yotambien' %}" target="_self">
-							<div class="datetime">
-								<time datetime="2018-09-22">03.11.2018</time>
-							</div>
-							<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
-							<p>Centro Cultural Matucana 100, Santiago</p>
-						</a>
-					</li>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="container">
+				<div class="home-container">
+					<div class="col-xs-12 col-md-4">
+						<section id="home_productions">
+							<h3 class="section-title">Próximas Funciones</h3>
+							<ul>
+								<li class="item item-prod">
+									<a href="{% url 'web:yotambien' %}" target="_self">
+										<div class="datetime">
+											<time datetime="2018-09-22">02.11.2018</time>
+										</div>
+										<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+										<p>entro Cultural Matucana 100, Santiago</p>
+									</a>
+								</li>
 
-					<li class="item item-prod">
-						<a href="{% url 'web:yotambien' %}" target="_self">
-							<div class="datetime">
-								<time datetime="2018-09-22">04.11.2018</time>
-							</div>
-							<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
-							<p>Centro Cultural Matucana 100, Santiago</p>
-						</a>
-					</li>
+								<li class="item item-prod">
+									<a href="{% url 'web:yotambien' %}" target="_self">
+										<div class="datetime">
+											<time datetime="2018-09-22">03.11.2018</time>
+										</div>
+										<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+										<p>Centro Cultural Matucana 100, Santiago</p>
+									</a>
+								</li>
 
-				   <li class="item item-prod">
-						<a href="{% url 'web:yotambien' %}" target="_self">
-							<div class="datetime">
-								<time datetime="2018-09-22">08.11.2018</time>
-							</div>
-							<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
-							<p>Centro Cultural Matucana 100, Santiago</p>
-						</a>
-					</li>
-				</ul>
-                <a href="https://www.rosas.be/en/agenda/" class="cta">Agenda</a>
-			</section>
-            <section id="home_news">
-				<h3 class="section-title">Noticias</h3>
-				<ul>
-					<li class="item item-prod">
-						<a href="https://www.rosas.be/en/news/683-photobook-ianne-teresa-de-keersmaeker-rosas-2007---2017i" target="_self" class="inner">
-                            <h5 class="title">
-                                <span>Estreno <i>Yo también quiero ser un hombre blanco heterosexual</i></span>
-                            </h5>
-                            <address>Published on <time datetime="2018-09-11CEST12:23">11.09.2018</time></address>
-                        </a>
-					</li>
+								<li class="item item-prod">
+									<a href="{% url 'web:yotambien' %}" target="_self">
+										<div class="datetime">
+											<time datetime="2018-09-22">04.11.2018</time>
+										</div>
+										<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+										<p>Centro Cultural Matucana 100, Santiago</p>
+									</a>
+								</li>
 
-					<li class="item item-prod">
-						<a href="{% url 'web:yotambien' %}" target="_self">
-							<div class="datetime">
-								<time datetime="2018-09-22">03.11.2018</time>
-							</div>
-							<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
-							<p>Centro Cultural Matucana 100, Santiago</p>
-						</a>
-					</li>
+							   <li class="item item-prod">
+									<a href="{% url 'web:yotambien' %}" target="_self">
+										<div class="datetime">
+											<time datetime="2018-09-22">08.11.2018</time>
+										</div>
+										<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+										<p>Centro Cultural Matucana 100, Santiago</p>
+									</a>
+								</li>
+							</ul>
+			                <!-- <a href="https://www.rosas.be/en/agenda/" class="cta">Agenda</a> -->
+						</section>
+					</div>
+					<div class="col-xs-12 col-md-4">
+			            <section id="home_news">
+							<h3 class="section-title">Noticias</h3>
+							<ul>
+								<li class="item item-prod">
+									<a href="https://www.rosas.be/en/news/683-photobook-ianne-teresa-de-keersmaeker-rosas-2007---2017i" target="_self" class="inner">
+			                            <h5 class="title">
+			                                <span>Estreno <i>Yo también quiero ser un hombre blanco heterosexual</i></span>
+			                            </h5>
+			                            <address>Published on <time datetime="2018-09-11CEST12:23">11.09.2018</time></address>
+			                        </a>
+								</li>
 
-					<li class="item item-prod">
-						<a href="{% url 'web:yotambien' %}" target="_self">
-							<div class="datetime">
-								<time datetime="2018-09-22">04.11.2018</time>
-							</div>
-							<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
-							<p>Centro Cultural Matucana 100, Santiago</p>
-						</a>
-					</li>
+								<li class="item item-prod">
+									<a href="{% url 'web:yotambien' %}" target="_self">
+										<div class="datetime">
+											<time datetime="2018-09-22">03.11.2018</time>
+										</div>
+										<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+										<p>Centro Cultural Matucana 100, Santiago</p>
+									</a>
+								</li>
 
-				   <li class="item item-prod">
-						<a href="{% url 'web:yotambien' %}" target="_self">
-							<div class="datetime">
-								<time datetime="2018-09-22">08.11.2018</time>
-							</div>
-							<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
-							<p>Centro Cultural Matucana 100, Santiago</p>
-						</a>
-					</li>
-				</ul>
-                <a href="https://www.rosas.be/en/agenda/" class="cta">Agenda</a>
-			</section>
+								<li class="item item-prod">
+									<a href="{% url 'web:yotambien' %}" target="_self">
+										<div class="datetime">
+											<time datetime="2018-09-22">04.11.2018</time>
+										</div>
+										<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+										<p>Centro Cultural Matucana 100, Santiago</p>
+									</a>
+								</li>
 
+							   <li class="item item-prod">
+									<a href="{% url 'web:yotambien' %}" target="_self">
+										<div class="datetime">
+											<time datetime="2018-09-22">08.11.2018</time>
+										</div>
+										<h4 class="title">Yo también quiero ser un hombre blanco heterosexual</h4>
+										<p>Centro Cultural Matucana 100, Santiago</p>
+									</a>
+								</li>
+							</ul>
+			                <!-- <a href="https://www.rosas.be/en/agenda/" class="cta">Agenda</a> -->
+						</section>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-    <footer>
-		<div id="footer">
-			<div class="container">
-				<div class="row">
-                    <div class="col-md-4 col-pb-sm">
-						<div class="row">
-							<div class="col-md-10">
-								<h2>Intranet</h2>
-								<p><a class="btn btn-primary btn-learn">Log in</a></p>
-								<!--<div class="row">
-									<div class="col-md-6">
-										<p>From the countries Vokalia and Consonantia</p>
-									</div>
-									<div class="col-md-6">
-										<p>Far far away, behind the word mountains</p>
-									</div>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-pb-sm">
-						<h2>Newsletter</h2>
-						<p>Suscríbete para más información</p>
-						<div class="subscribe text-center">
-							<div class="form-group">
-								<input type="text" class="form-control text-center" placeholder="Enter Email address">
-								<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-pb-sm right-display">
-						<h2>Más sobre Antagonista</h2>
-						<p class="colorlib-social-icons colorlib-social-icons2">
-					        <a href="http://www.facebook.com/teatrodelantagonista"><i class="icon-facebook4"></i></a>
-							<a href="#"><i class="icon-twitter3"></i></a>
-							<a href="https://www.instagram.com/teatrodelantagonista/"><i class="icon-instagram"></i></a>
-							<a href="#"><i class="icon-dribbble2"></i></a>
-						</p>
-					</div>
-                </div>
-			    <div class="row">
-                    <div class="col-md-12 col-pb-sm text-center">
-                        <p>
-                            <span class="block" style="font-size:13px">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Teatro del Antagonista </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-		</div>
-	</footer>
 </div>
 
 
@@ -208,11 +186,11 @@
     }
 
 	#home_productions {
-		width: 37.33333%;
+		width: 100%;
 		padding-right: 1.33333em;
 	}
 	#home_news {
-		width: 37.33333%;
+		width: 100%;
 		padding-right: 1.33333em;
 	}
 
