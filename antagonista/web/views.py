@@ -38,6 +38,10 @@ def malentendido(request):
     context = {}
     return render(request, 'elmalentendido.html', context)
 
+def brujas(request):
+    context = {}
+    return render(request, 'lasbrujas.html', context)
+
 def silencio(request):
     context = {}
     return render(request, 'silencio.html', context)

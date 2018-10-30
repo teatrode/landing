@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^malentendido/$', views.malentendido, name='malentendido'),
     url(r'^silencio/$', views.silencio, name='silencio'),
     url(r'^lagaviota/$', views.lagaviota, name='lagaviota'),
-    url(r'^direcciones/$', views.direcciones, name='direcciones')
+    url(r'^direcciones/$', views.direcciones, name='direcciones'),
+    url(r'^brujas/$', views.brujas, name='brujas')
 
 ]
