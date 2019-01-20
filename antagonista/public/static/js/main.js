@@ -82,7 +82,7 @@
 	  	$('#colorlib-hero .flexslider').flexslider({
 			animation: "slide",
 			slideshowSpeed: 2500,
-			directionNav: true,
+			directionNav: false,
 			start: function(){
 				setTimeout(function(){
 					$('.slider-text').removeClass('animated fadeInUp');
