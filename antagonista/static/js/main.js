@@ -80,9 +80,9 @@
 	var sliderMain = function() {
 		
 	  	$('#colorlib-hero .flexslider').flexslider({
-			animation: "fade",
-			slideshowSpeed: 5000,
-			directionNav: true,
+			animation: "slide",
+			slideshowSpeed: 2500,
+			directionNav: false,
 			start: function(){
 				setTimeout(function(){
 					$('.slider-text').removeClass('animated fadeInUp');
