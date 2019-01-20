@@ -80,8 +80,8 @@
 	var sliderMain = function() {
 		
 	  	$('#colorlib-hero .flexslider').flexslider({
-			animation: "fade",
-			slideshowSpeed: 5000,
+			animation: "slide",
+			slideshowSpeed: 2500,
 			directionNav: true,
 			start: function(){
 				setTimeout(function(){
