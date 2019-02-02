@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^silencio/$', views.silencio, name='silencio'),
     url(r'^lagaviota/$', views.lagaviota, name='lagaviota'),
     url(r'^direcciones/$', views.direcciones, name='direcciones'),
-    url(r'^brujas/$', views.brujas, name='brujas')
+    url(r'^brujas/$', views.brujas, name='brujas'),
+    url(r'^bellcross/$', views.bellcross, name='bellcross')
 
 ]

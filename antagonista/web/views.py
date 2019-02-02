@@ -57,3 +57,7 @@ def lagaviota(request):
 def compania(request):
     context = {}
     return render(request, 'compania.html', context)
+
+def bellcross(request):
+    context = {}
+    return render(request, 'bellcross.html', context)
