@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^brujas/$', views.brujas, name='brujas'),
     url(r'^bellcross/$', views.bellcross, name='bellcross')
 
+
 ]
