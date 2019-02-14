@@ -225,30 +225,36 @@ header {
   overflow: hidden; }
 
 #colorlib-hero {
-  min-height: 700px;
-  background: url(r"C:\Users\kfgomez\antagonista\antagonistaenv\Antagonista\Antagonista\App\static\images\loader.gif") no-repeat center center;
   width: 100%;
-  float: left; }
+  float: left; 
+}
+  
   #colorlib-hero .flexslider {
     border: none;
     z-index: 1;
-    margin-bottom: 0; }
-    #colorlib-hero .flexslider .slides {
+    margin-bottom: 0; 
+  }
+    
+  #colorlib-hero .flexslider .slides {
       position: relative;
-      overflow: hidden; }
-      #colorlib-hero .flexslider .slides li {
+      overflow: hidden; 
+  }
+      
+  #colorlib-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        min-height: 700px;
+        min-height: 400px;
         position: relative; }
-        #colorlib-hero .flexslider .slides li .overlay {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          }
+        
+  #colorlib-hero .flexslider .slides li .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+  }
+    
     #colorlib-hero .flexslider .flex-control-nav {
       bottom: 2em;
       z-index: 1000;
