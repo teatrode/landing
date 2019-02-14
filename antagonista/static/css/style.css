@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0px 0;
         text-transform: uppercase; 
         /*font-family: impact;*/
-        font-family: HelveticaNeue-CondensedBlack;
+        font-family: impact,HelveticaNeue-CondensedBlack;
         letter-spacing: 8px;}
         @media screen and (max-width: 768px) {
           #colorlib-main-nav ul li a {
